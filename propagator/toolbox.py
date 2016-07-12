@@ -597,6 +597,7 @@ class Accumulator(base_tbx.BaseToolbox_Mixin):
 
             if params['subcatchments'].value:
                 fields = analysis._get_wq_fields(sc, prefix)
+                fields.append('n/a')
                 self._set_filter_list(vc.filters[0], fields)
                 self._set_filter_list(vc.filters[1], list(analysis.AGG_METHOD_DICT.keys()))
                 self._set_filter_list(vc.filters[2], fields)
