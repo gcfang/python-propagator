@@ -647,8 +647,9 @@ class Test_Accumulator_Tbx(BaseToolboxChecker_Mixin):
                     nt.assert_list_equal(
                         filters[0].list,
                         [
-                            u'Imp', u'Area', u'WetM', u'WetN', u'DryM',
-                            u'DryN', u'imp_ar', u'WetB', u'n/a'
+                            u'FID', u'Shape', u'Watershed', u'Catch_ID_a',
+                            u'Dwn_Catch_', u'Imp', u'Area', u'WetM', u'WetN',
+                            u'DryM', u'DryN', u'imp_ar', u'WetB', u'n/a'
                         ]
                     )
 
